@@ -14,22 +14,43 @@ function main(){
   var boton0 = document.getElementById('boton 0');
   var botonmas = document.getElementById('boton +');
 
+  var display = document.getElementById('display');
+
 
   boton1.onclick = () => {
     console.log("1");
 
-    var txt = '1';
-    var numeros = txt.length;
-    var display = document.getElementById('display');
-    display.innerHTML = "1";
+    var numero1 = "1";
+    display.innerHTML = numero1;
   }
   boton2.onclick = () => {
     console.log("2");
 
-    var txt = '2';
-    var numeros = txt.length;
-    var display = document.getElementById('display');
-    display.innerHTML = "2";
+    var numero2 = "2";
+    display.innerHTML = numero2;
   }
+  boton3.onclick = () => {
+    console.log("3");
 
+    var numero3 = "3";
+    display.innerHTML = numero3;
+  }
+  boton4.onclick = () => {
+    console.log("4");
+
+    var numero4 = "4";
+    display.innerHTML = numero4;
+  }
+  boton5.onclick = () => {
+    console.log("5");
+
+    var numero5 = "5";
+    display.innerHTML = numero5;
+  }
+  boton6.onclick = () => {
+    console.log("6");
+
+    var numero6 = "6";
+    display.innerHTML = numero6;
+  }
 }
