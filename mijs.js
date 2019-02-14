@@ -1,7 +1,5 @@
 function main(){
 
-  console.log("hola mundo");
-
   var boton1 = document.getElementById('boton 1');
   var boton2 = document.getElementById('boton 2');
   var boton3 = document.getElementById('boton 3');
@@ -52,5 +50,29 @@ function main(){
 
     var numero6 = "6";
     display.innerHTML = numero6;
+  }
+  boton7.onclick = () => {
+    console.log("7");
+
+    var numero7 = "7";
+    display.innerHTML = numero7;
+  }
+  boton8.onclick = () => {
+    console.log("8");
+
+    var numero8 = "8";
+    display.innerHTML = numero8;
+  }
+  boton9.onclick = () => {
+    console.log("9");
+
+    var numero9 = "9";
+    display.innerHTML = numero9;
+  }
+  boton0.onclick = () => {
+    console.log("0");
+
+    var numero0 = "0";
+    display.innerHTML = numero0;
   }
 }
