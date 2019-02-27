@@ -1,3 +1,13 @@
 body{
   background-color: lightblue;
 }
+#display{
+  background-color: white;
+  padding: 10px;
+  border: 3px solid black;
+}
+#display2{
+  background-color: white;
+  padding: 10px;
+  border: 3px solid black;
+}

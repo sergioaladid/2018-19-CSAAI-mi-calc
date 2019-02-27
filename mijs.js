@@ -19,50 +19,87 @@ function main(){
 
 
   var display = document.getElementById('display');
+  var display2 = document.getElementById('display2');
 
   var op1 = null;
   var op2 = null;
   var operacion = null;
   var resultado = null;
 
+  var comienzo = 0;
+
+  display.innerHTML = comienzo;
+  display2.innerHTML = comienzo;
+
 
   boton1.onclick = () => {
+    if (display.innerHTML == comienzo){
+      display.innerHTML = null;
+    }
     display.innerHTML = display.innerHTML + "1";
+
   }
 
   boton2.onclick = () => {
+    if (display.innerHTML == comienzo){
+      display.innerHTML = null;
+    }
     display.innerHTML = display.innerHTML + "2";
   }
 
   boton3.onclick = () => {
+    if (display.innerHTML == comienzo){
+      display.innerHTML = null;
+    }
     display.innerHTML = display.innerHTML + "3";
   }
 
   boton4.onclick = () => {
+    if (display.innerHTML == comienzo){
+      display.innerHTML = null;
+    }
     display.innerHTML = display.innerHTML + "4";
   }
 
   boton5.onclick = () => {
+    if (display.innerHTML == comienzo){
+      display.innerHTML = null;
+    }
     display.innerHTML = display.innerHTML + "5";
   }
 
   boton6.onclick = () => {
+    if (display.innerHTML == comienzo){
+      display.innerHTML = null;
+    }
     display.innerHTML = display.innerHTML + "6";
   }
 
   boton7.onclick = () => {
+    if (display.innerHTML == comienzo){
+      display.innerHTML = null;
+    }
     display.innerHTML = display.innerHTML + "7";
   }
 
   boton8.onclick = () => {
+    if (display.innerHTML == comienzo){
+      display.innerHTML = null;
+    }
     display.innerHTML = display.innerHTML + "8";
   }
 
   boton9.onclick = () => {
+    if (display.innerHTML == comienzo){
+      display.innerHTML = null;
+    }
     display.innerHTML = display.innerHTML + "9";
   }
 
   boton0.onclick = () => {
+    if (display.innerHTML == comienzo){
+      display.innerHTML = null;
+    }
     display.innerHTML = display.innerHTML + "0";
   }
 
@@ -71,6 +108,9 @@ function main(){
   }
 
   botonmas.onclick = () => {
+    if (display.innerHTML == comienzo){
+      display.innerHTML = null;
+    }
     op1 = display.innerHTML;
     if (display.innerHTML.includes("+")){
       display.innerHTML;
@@ -80,6 +120,9 @@ function main(){
   }
 
   botonmenos.onclick = () => {
+    if (display.innerHTML == comienzo){
+      display.innerHTML = null;
+    }
     op1 = display.innerHTML;
     if (display.innerHTML.includes("-")){
       display.innerHTML;
@@ -89,6 +132,9 @@ function main(){
   }
 
   botondiv.onclick = () => {
+    if (display.innerHTML == comienzo){
+      display.innerHTML = null;
+    }
     op1 = display.innerHTML;
     if (display.innerHTML.includes("/")){
       display.innerHTML;
@@ -98,6 +144,9 @@ function main(){
   }
 
   botonmul.onclick = () => {
+    if (display.innerHTML == comienzo){
+      display.innerHTML = null;
+    }
     op1 = display.innerHTML;
     if (display.innerHTML.includes("*")){
       display.innerHTML;
@@ -107,6 +156,9 @@ function main(){
   }
 
   botonigual.onclick = () => {
+    if (display.innerHTML == comienzo){
+      display.innerHTML = null;
+    }
     operacion = display.innerHTML;
     if (operacion.includes("+")){
       op2 = operacion.split("+")[1]
@@ -124,7 +176,8 @@ function main(){
       op2 = operacion.split("/")[1]
       resultado = parseFloat(op1) / parseFloat(op2);
     }
-    display.innerHTML = resultado;
+    display.innerHTML = comienzo;
+    display2.innerHTML = resultado;
   }
 
 
