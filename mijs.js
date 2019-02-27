@@ -11,68 +11,82 @@ function main(){
   var boton9 = document.getElementById('boton 9');
   var boton0 = document.getElementById('boton 0');
   var botonmas = document.getElementById('boton +');
+  var botonmenos = document.getElementById('boton -');
+  var botonmul = document.getElementById('boton *');
+  var botondiv = document.getElementById('boton /');
+  var botonpunt = document.getElementById('boton .');
+  var botonigual = document.getElementById('boton =');
+
 
   var display = document.getElementById('display');
 
+  var op1 = null;
+  var op2 = null;
+  var operacion = null;
+  var resultado = null;
+
 
   boton1.onclick = () => {
-    console.log("1");
-
-    var numero1 = "1";
-    display.innerHTML = numero1;
+    display.innerHTML = display.innerHTML + "1";
   }
+
   boton2.onclick = () => {
-    console.log("2");
-
-    var numero2 = "2";
-    display.innerHTML = numero2;
+    display.innerHTML = display.innerHTML + "2";
   }
+
   boton3.onclick = () => {
-    console.log("3");
-
-    var numero3 = "3";
-    display.innerHTML = numero3;
+    display.innerHTML = display.innerHTML + "3";
   }
+
   boton4.onclick = () => {
-    console.log("4");
-
-    var numero4 = "4";
-    display.innerHTML = numero4;
+    display.innerHTML = display.innerHTML + "4";
   }
+
   boton5.onclick = () => {
-    console.log("5");
-
-    var numero5 = "5";
-    display.innerHTML = numero5;
+    display.innerHTML = display.innerHTML + "5";
   }
+
   boton6.onclick = () => {
-    console.log("6");
-
-    var numero6 = "6";
-    display.innerHTML = numero6;
+    display.innerHTML = display.innerHTML + "6";
   }
+
   boton7.onclick = () => {
-    console.log("7");
-
-    var numero7 = "7";
-    display.innerHTML = numero7;
+    display.innerHTML = display.innerHTML + "7";
   }
+
   boton8.onclick = () => {
-    console.log("8");
-
-    var numero8 = "8";
-    display.innerHTML = numero8;
+    display.innerHTML = display.innerHTML + "8";
   }
+
   boton9.onclick = () => {
-    console.log("9");
-
-    var numero9 = "9";
-    display.innerHTML = numero9;
+    display.innerHTML = display.innerHTML + "9";
   }
+
   boton0.onclick = () => {
-    console.log("0");
-
-    var numero0 = "0";
-    display.innerHTML = numero0;
+    display.innerHTML = display.innerHTML + "0";
   }
+
+  botonpunt.onclick = () => {
+    display.innerHTML = display.innerHTML + ".";
+  }
+
+  botonmas.onclick = () => {
+    op1 = display.innerHTML;
+    if (display.innerHTML.includes("+")){
+      display.innerHTML;
+    }else{
+      display.innerHTML = display.innerHTML + "+";
+    }
+  }
+
+  botonigual.onclick = () => {
+    operacion = display.innerHTML;
+    if (operacion.includes("+")){
+      op2 = operacion.split("+")[1]
+      resultado = parseFloat(op1) + parseFloat(op2);
+    }
+    display.innerHTML = resultado;
+  }
+
+
 }
