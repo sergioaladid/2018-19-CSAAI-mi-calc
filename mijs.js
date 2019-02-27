@@ -79,11 +79,50 @@ function main(){
     }
   }
 
+  botonmenos.onclick = () => {
+    op1 = display.innerHTML;
+    if (display.innerHTML.includes("-")){
+      display.innerHTML;
+    }else{
+      display.innerHTML = display.innerHTML + "-";
+    }
+  }
+
+  botondiv.onclick = () => {
+    op1 = display.innerHTML;
+    if (display.innerHTML.includes("/")){
+      display.innerHTML;
+    }else{
+      display.innerHTML = display.innerHTML + "/";
+    }
+  }
+
+  botonmul.onclick = () => {
+    op1 = display.innerHTML;
+    if (display.innerHTML.includes("*")){
+      display.innerHTML;
+    }else{
+      display.innerHTML = display.innerHTML + "*";
+    }
+  }
+
   botonigual.onclick = () => {
     operacion = display.innerHTML;
     if (operacion.includes("+")){
       op2 = operacion.split("+")[1]
       resultado = parseFloat(op1) + parseFloat(op2);
+    }
+    if (operacion.includes("-")){
+      op2 = operacion.split("-")[1]
+      resultado = parseFloat(op1) - parseFloat(op2);
+    }
+    if (operacion.includes("*")){
+      op2 = operacion.split("*")[1]
+      resultado = parseFloat(op1) * parseFloat(op2);
+    }
+    if (operacion.includes("/")){
+      op2 = operacion.split("/")[1]
+      resultado = parseFloat(op1) / parseFloat(op2);
     }
     display.innerHTML = resultado;
   }
